@@ -1,0 +1,245 @@
+
+.box{
+    border: 2px solid #333;
+    padding: 20px;
+    background-color:gainsboro;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#container{
+    display: grid;
+    color: black;
+    max-width: 960px;
+   margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: repeat(4,1fr)minmax(100px, auto);
+    grid-gap: 10px;
+    
+}
+body{
+    background-image: url(blurryBlueBackground.jpeg);
+    background-size: cover;
+}
+#container > *{
+    background: linear-gradient(60deg,#a7dbef, rgb(121, 150, 162),  #97b5d8);
+    padding: 30px;
+    
+}
+header{
+    /* grid-area: myheader; */
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.id{
+    display: inline-flex;
+    margin: 10px;
+}
+main{
+    grid-column:1/5;
+    grid-row: 2/4;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  
+}
+
+footer{
+    grid-column:1/5;
+    grid-row:4/5;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.nav{
+    margin-left:10px;
+    color: black;
+    padding-left: 100px;
+    display: inline-flex;
+    text-align: center;
+}
+@keyframes circle1  {
+    0% {background-color: black;left:0px;top:0px;}
+    10% {background-color:  rgb(121, 150, 162);left:10px;top:0px;}
+    20% {background-color: lightblue;left:50px;top:0px;}
+    25% {background-color: black;left:70px;top:0px}
+    30% {background-color:  rgb(121, 150, 162);left:70px;top:10px;}
+    40% {background-color: lightblue;left:70px;top:60px;}
+    50% {background-color: black;left:70px;top:90px;}
+    60% {background-color:  rgb(121, 150, 162);left:50px;top:90px;}
+    70% {background-color: lightblue;left:10px;top:90px;}
+    75% {background-color: black;left:0px;top:90px}
+    80% {background-color:  rgb(121, 150, 162);left:0px;top:60px;}
+    90% {background-color: lightblue;left:0px;top:10px;}
+    100% {background-color: black;left:0px;top:0px;}
+  }
+  @keyframes circle2  {
+    0% {background-color: black;left: 0px;top:90px;}
+    10% {background-color:  rgb(121, 150, 162);left:0px;top:60px;}
+    20% {background-color: lightblue;left:0px;top:10px;}
+    25% {background-color: black;left:0px;top:0px;}
+    30% {background-color:  rgb(121, 150, 162);left:10px;top:0px;}
+    40% {background-color: lightblue;left:50px;top:0px;}
+    50% {background-color: black;left:70px;top:0px;}
+    60% {background-color:  rgb(121, 150, 162);left:70px;top:10px;}
+    70% {background-color: lightblue;left:70px;top:60px;}
+    75% {background-color: black;left:70px;top:90px;}
+    80% {background-color:  rgb(121, 150, 162);left:50px;top:90px;}
+    90% {background-color: lightblue;left:10px;top:90px;}
+    100% {background-color: black;left:0px;top:90px;}
+  }
+  @keyframes circle3  {
+    0% {background-color: black;left: 70px;top:0px;}
+    10% {background-color:  rgb(121, 150, 162);left:70px;top:10px;}
+    20% {background-color: lightblue;left:70px;top:60px;}
+    25% {background-color: black;left:70px;top:90px;}
+    30% {background-color:  rgb(121, 150, 162);left:50px;top:90px;}
+    40% {background-color: lightblue;left:10px;top:90px;}
+    50% {background-color: black;left:0px;top:90px;}
+    60% {background-color:  rgb(121, 150, 162);left:0px;top:60px;}
+    70% {background-color: lightblue;left:0px;top:10px;}
+    75% {background-color: black;left:0px;top:0px;}
+    80% {background-color:  rgb(121, 150, 162);left:10px;top:0px;}
+    90% {background-color: lightblue;left:50px;top:0px;}
+    100% {background-color: black;left:70px;top:0px;}
+  }
+  @keyframes circle4  {
+    0% {background-color: black;left: 70px;top:90px;}
+    10% {background-color:  rgb(121, 150, 162);left:50px;top:90px;}
+    20% {background-color: lightblue;left:10px;top:90px;}
+    25% {background-color: black;left:0px;top:90px;}
+    30% {background-color:  rgb(121, 150, 162);left:0px;top:60px;}
+    40% {background-color: lightblue;left:0px;top:10px;}
+    50% {background-color: black;left:0px;top:0px;}
+    60% {background-color:  rgb(121, 150, 162);left:10px;top:0px;}
+    70% {background-color: lightblue;left:50px;top:0px;}
+    75% {background-color: black;left:70px;top:0px;}
+    80% {background-color:  rgb(121, 150, 162);left:70px;top:10px;}
+    90% {background-color: lightblue;left:70px;top:60px;}
+    100% {background-color: black;left:70px;top:90px;}
+  }
+  @keyframes circle5  {
+    0% {background-color: black;}
+    10% {background-color:  rgb(121, 150, 162);}
+    20% {background-color: lightblue;}
+    25% {background-color: black;}
+    30% {background-color:  rgb(121, 150, 162);}
+    40% {background-color: lightblue;}
+    50% {background-color: black;}
+    60% {background-color:  rgb(121, 150, 162);}
+    70% {background-color: lightblue;}
+    75% {background-color: black;}
+    80% {background-color:  rgb(121, 150, 162);}
+    90% {background-color: lightblue;}
+    100% {background-color: black;}
+  }
+  
+  .first {
+    width: 35px;
+    height: 35px;
+    background-color:  rgb(121, 150, 162);
+    animation-name: circle1 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    border-radius: 50%;
+  }
+  .second{
+    margin-top: -35px ;
+    width: 35px;
+    height: 35px;
+    background-color:  rgb(121, 150, 162);
+    animation-name: circle2 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    border-radius: 50%;
+  }
+  .third{
+    margin-top: -35px ;
+    width: 35px;
+    height: 35px;
+    background-color:  rgb(121, 150, 162);
+    animation-name: circle3 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    border-radius: 50%;
+
+  }
+  .fourth{
+    margin-top: -35px ;
+    width: 35px;
+    height: 35px;
+    background-color:  rgb(121, 150, 162);
+    animation-name: circle4 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    border-radius: 50%;
+
+  }
+  .fifth{
+    margin-top: 10px ;
+    margin-left: 34px;
+    width: 35px;
+    height: 35px;
+    background-color:  rgb(121, 150, 162);
+    animation-name: circle5 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    border-radius: 50%;
+  }
+  .logo{
+    border: solid black;
+    border-radius: 50%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 102px;
+    height: 120px;
+    border-width: 8px;
+    animation-name: circle6;
+    border-color: #52b2bf;
+    background-color: #52b2bf;
+    margin-top: -30px;
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;background-color: #97b5d8;border-radius: 10px;
+  }
+  #main_img1{
+    border: 3px solid black;
+  }
+  #main_img2{
+    border: 3px solid black;
+  }
+  #main_img3{
+    border: 3px solid black;
+  }
